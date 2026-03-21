@@ -9,12 +9,12 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "activationEvents": ["onStartupFinished"],
   "main": "./extension.js",
   "contributes": {
     "commands": [{
-      "command": "autocommit.helloWorld",
-      "title": "Hello World"
+      "command": "autocommit.triggerCommit",
+      "title": "AutoCommit: Generate & Commit"
     }]
   },
   "scripts": {
