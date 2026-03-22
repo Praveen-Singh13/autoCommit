@@ -1,7 +1,7 @@
 {
   "name": "autocommit",
   "displayName": "autoCommit",
-  "description": "Automatically commits your code whenever you close vscode window with a clean and proffesional message generated and humanised by AI",
+  "description": "Automatically commits your code whenever you close VS Code window with a clean and professional message generated and humanised by AI",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.110.0"
@@ -15,7 +15,43 @@
     "commands": [{
       "command": "autocommit.triggerCommit",
       "title": "AutoCommit: Generate & Commit"
-    }]
+    }],
+    "configuration": {
+      "title": "AutoCommit",
+      "properties": {
+        "autocommit.apiKey": {
+          "type": "string",
+          "default": "",
+          "description": "API key for the AI provider (Gemini / OpenAI). Leave empty to use config/config.json.",
+          "order": 1
+        },
+        "autocommit.apiProvider": {
+          "type": "string",
+          "enum": ["gemini", "openai"],
+          "default": "gemini",
+          "description": "AI API provider to use for generating commit messages.",
+          "order": 2
+        },
+        "autocommit.model": {
+          "type": "string",
+          "default": "gemini-2.0-flash",
+          "description": "Model name to use (e.g. gemini-2.0-flash, gpt-4o-mini).",
+          "order": 3
+        },
+        "autocommit.pythonPath": {
+          "type": "string",
+          "default": "python",
+          "description": "Path to the Python executable.",
+          "order": 4
+        },
+        "autocommit.commitOnClose": {
+          "type": "boolean",
+          "default": true,
+          "description": "Automatically commit changes when VS Code window closes.",
+          "order": 5
+        }
+      }
+    }
   },
   "scripts": {
     "lint": "eslint .",
