@@ -1,21 +1,30 @@
 {
-  "name": "autocommit",
-  "displayName": "autoCommit",
+  "name": "auto-commit13",
+  "displayName": "Auto-Commit!",
   "description": "Automatically commits your code whenever you close VS Code window with a clean and professional message generated and humanised by AI",
   "version": "0.0.1",
+  "publisher": "PraveenSingh13",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Praveen-Singh13/autoCommit.git"
+  },
   "engines": {
     "vscode": "^1.110.0"
   },
   "categories": [
     "Other"
   ],
-  "activationEvents": ["onStartupFinished"],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
   "main": "./extension.js",
   "contributes": {
-    "commands": [{
-      "command": "autocommit.triggerCommit",
-      "title": "AutoCommit: Generate & Commit"
-    }],
+    "commands": [
+      {
+        "command": "autocommit.triggerCommit",
+        "title": "AutoCommit: Generate & Commit"
+      }
+    ],
     "configuration": {
       "title": "AutoCommit",
       "properties": {
@@ -27,7 +36,10 @@
         },
         "autocommit.apiProvider": {
           "type": "string",
-          "enum": ["gemini", "openai"],
+          "enum": [
+            "gemini",
+            "openai"
+          ],
           "default": "gemini",
           "description": "AI API provider to use for generating commit messages.",
           "order": 2
