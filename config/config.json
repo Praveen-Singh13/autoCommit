@@ -1,6 +1,0 @@
-{
-    "api_provider": "gemini",
-    "api_key": "AIzaSyA_ennzwhxglljno47b5HStiW1K2JihAbw",
-    "api_url": "https://generativelanguage.googleapis.com/v1beta/models",
-    "model": "gemini-2.0-flash"
-}
