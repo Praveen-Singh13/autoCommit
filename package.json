@@ -2,7 +2,7 @@
   "name": "auto-commit13",
   "displayName": "Auto-Commit!",
   "description": "Automatically commits your code whenever you close VS Code window with a clean and professional message generated and humanised by AI",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "PraveenSingh13",
   "repository": {
     "type": "git",
