@@ -1,4 +1,4 @@
-# 🤖 Auto-Commit! — Intelligent Commit Message Generator
+# Auto-Commit! — Intelligent Commit Message Generator
 
 > **Automatically generate clean, professional, human-like Git commit messages — powered by AI.**
 
@@ -7,24 +7,24 @@
 
 ---
 
-## 📌 What is Auto-Commit?
+## What is Auto-Commit?
 
 **Auto-Commit!** is a VS Code extension that eliminates the hassle of writing commit messages. It detects your uncommitted changes, sends them to an AI model (Google Gemini or OpenAI), and generates a meaningful, conventional commit message — then commits your code automatically.
 
 No more `"fix"`, `"update"`, or `"changes"`. Every commit in your history will be clear, descriptive, and professional.
 
-### ✨ Key Features
+### Key Features
 
-- 🧠 **AI-Powered Messages** — Generates conventional commit messages (`feat:`, `fix:`, `refactor:`, etc.) using Google Gemini or OpenAI
-- ⚡ **One-Click Commit** — Trigger from the Command Palette or click the status bar icon
-- 🚪 **Auto-Commit on Close** — Automatically commits your changes when you close VS Code (configurable)
-- 📊 **Smart Diff Analysis** — Analyzes both staged and unstaged changes to understand what you changed
-- 🔒 **Secure** — API keys are passed via environment variables, never written to disk by the extension
-- 🛡️ **Graceful Fallback** — If the API fails, it still commits with a sensible default message
+- **AI-Powered Messages** — Generates conventional commit messages (`feat:`, `fix:`, `refactor:`, etc.) using Google Gemini or OpenAI
+- **One-Click Commit** — Trigger from the Command Palette or click the status bar icon
+- **Auto-Commit on Close** — Automatically commits your changes when you close VS Code (configurable)
+- **Smart Diff Analysis** — Analyzes both staged and unstaged changes to understand what you changed
+- **Secure** — API keys are passed via environment variables, never written to disk by the extension
+- **Graceful Fallback** — If the API fails, it still commits with a sensible default message
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 
@@ -51,11 +51,11 @@ code --install-extension PraveenSingh13.auto-commit13
 2. Search for **"AutoCommit"**
 3. Enter your **API Key**
 4. Choose your **AI Provider** (`gemini` or `openai`)
-5. You're ready to go! 🎉
+5. You're ready to go!
 
 ---
 
-## 🎯 Usage
+## Usage
 
 ### Manual Trigger
 1. Make changes to your code
@@ -74,7 +74,7 @@ autocommit.commitOnClose: false
 
 ---
 
-## ⚙️ Configuration
+## Configuration
 
 All settings are available in the VS Code Settings UI under **AutoCommit**, or in your `settings.json`:
 
@@ -103,7 +103,7 @@ You can also configure via `config/config.json` in the extension directory (see 
 
 ---
 
-## 🏗️ How It Works
+## How It Works
 
 ```
 ┌─────────────────────────┐
@@ -146,7 +146,7 @@ You can also configure via `config/config.json` in the extension directory (see 
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 autoCommit/
@@ -172,7 +172,7 @@ autoCommit/
 
 ---
 
-## 🛡️ Error Handling
+## Error Handling
 
 | Scenario | What Happens |
 |---|---|
@@ -185,7 +185,7 @@ autoCommit/
 
 ---
 
-## 🔒 Security
+## Security
 
 - **API keys** entered in VS Code settings are passed to Python via environment variables — they are never written to a file by the extension
 - `config/config.json` is in `.gitignore` to prevent accidentally pushing your API key
@@ -193,7 +193,7 @@ autoCommit/
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Here's how to get started:
 
@@ -221,7 +221,7 @@ Contributions are welcome! Here's how to get started:
 
 ---
 
-## 📅 Roadmap
+## Roadmap
 
 - [ ] Commit preview window before executing
 - [ ] Optional `git push` after commit
@@ -232,13 +232,13 @@ Contributions are welcome! Here's how to get started:
 
 ---
 
-## 📄 License
+## License
 
 This project is open source. See [LICENSE](LICENSE) for details.
 
 ---
 
-## 👤 Author
+## Author
 
 **Praveen Singh**
 - GitHub: [@Praveen-Singh13](https://github.com/Praveen-Singh13)
@@ -247,5 +247,5 @@ This project is open source. See [LICENSE](LICENSE) for details.
 ---
 
 <p align="center">
-  Made with ❤️ for developers who hate writing commit messages
+  Made with love for developers who hate writing commit messages
 </p>
